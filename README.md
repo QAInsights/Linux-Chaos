@@ -11,3 +11,9 @@ Below command fills the disk pretty quick.
 ```
 cat /dev/zero > /var/log/diskchaos.log
 ```
+
+To regain the space
+
+```
+truncate -s 0 /var/log/diskchaos.log
+```
